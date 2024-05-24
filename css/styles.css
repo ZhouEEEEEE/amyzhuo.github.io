@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between; /* Space between the name and the nav */
+    align-items: center; /* Center content vertically */
+}
+
+.header-left {
+    font-size: 1rem; /* Adjust the size of the name text */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 0.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Adjust for moving content up */
+    min-height: 90vh; /* Adjust for footer visibility */
+}
+
+section.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem; /* Add margin to move content up */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.about-content img {
+    max-width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+    height: 2rem; /* Reduce footer height */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content vertically */
+    position: static; /* Footer will appear at the bottom after content */
+}
+
