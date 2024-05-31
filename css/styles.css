@@ -1,12 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
+
+
 header {
-    background: #333;
+    background: #102a04;
     color: #fff;
     padding: 1rem 1rem;
     display: flex;
@@ -15,7 +17,20 @@ header {
 }
 
 .header-left {
+    display: flex;
+    align-items: center;
+    font-family: 'Merriweather', serif; /* Font for the header name */
     font-size: 1rem; /* Adjust the size of the name text */
+}
+
+.header-left span {
+    margin-right: 1rem; /* Space between name and icons */
+}
+
+.header-left a {
+    color: #fff;
+    margin-right: 1rem; /* Space between icons */
+    font-size: 1rem; /* Increase icon size */
 }
 
 nav ul {
@@ -44,35 +59,94 @@ main {
 
 section.about {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 2rem; /* Add margin to move content up */
 }
 
+.about h2 {
+    font-family: 'Merriweather', serif; /* Font for the heading */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
 .about-content {
     display: flex;
+    flex-direction: row; /* Align items horizontally */
     align-items: center;
     text-align: left;
+    margin-bottom: 2rem; /* Add space between items */
+    max-width: 1200px; /* Optional: limit the width of each experience item */
 }
 
 .about-content img {
-    max-width: 300px;
+    max-width: 420px;
     height: auto;
-    margin-right: 20px;
+    margin-right: 4rem;
+}
+
+.about h3 {
+    font-family: 'Merriweather', serif; /* Font for the heading */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .about-text {
     max-width: 600px;
 }
 
-.about-text h2 {
+.about h4 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+}
+
+.photo-wall {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px; /* Space between photos */
+    margin-right: 20px; /* Space between photo wall and text */
+}
+
+.photo-wall img {
+    max-width: 380px; /* Adjust the size of the photos */
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.contact h2 {
+    font-family: 'Merriweather', serif; /* Font for the heading */
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin: 0.5rem 0;
+}
+
+.contact-list li a {
+    color: #ff761b;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.contact-list li a i {
+    margin-right: 0.5rem;
+    font-size: 2rem; /* Increase the icon size */
+}
+
 footer {
-    background: #333;
+    background: #4b7335;
     color: #fff;
     text-align: center;
     padding: 0.5rem 0;
